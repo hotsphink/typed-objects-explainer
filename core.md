@@ -68,8 +68,8 @@ first convert the value to a number (as is common with JS) and then
 coerce the value into the specified size:
 
 ```js
-int8(128)   // returns 127
-int8("128") // returns 127
+int8(128)   // returns -128
+int8("128") // returns -128
 int8(2.2)   // returns 2
 int8({valueOf() {return "2.2"}}) // returns 2
 int8({}) // returns 0, because Number({}) results in NaN, which is replaced with the default value 0.
